@@ -1,0 +1,55 @@
+/* Default styles for larger screens */
+header {
+  display: flex;
+  padding: 1rem 0;
+  align-items: center;
+  background-color: black;
+  justify-content: space-evenly;
+}
+
+nav a {
+  margin-left: 1.2rem;
+}
+
+.form-search {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  right: 0;
+  top: -0.3rem;
+  padding: 0.5rem 0;
+  color: black;
+  background-color: black;
+}
+
+.h1-logo {
+  cursor: pointer;
+}
+
+.input-search {
+  padding: 0.2rem;
+  display: block;
+  width: 350px;
+  color: black;
+}
+
+.warenkorb {
+  position: relative;
+  cursor: pointer;
+}
+
+.warenkorb span {
+  position: absolute;
+  padding: 0.3rem;
+  background-color: rgb(108, 176, 6);
+  border-radius: 100%;
+  font-size: 0.5rem;
+  right: -0.5rem;
+  top: -0.3rem;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+}
