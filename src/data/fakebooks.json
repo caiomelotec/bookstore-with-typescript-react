@@ -3,30 +3,160 @@
     "id": 1,
     "title": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
-    "price": 12.99
+    "price": 12.99,
+    "imgUrl": "/img/book01.png",
+    "delivery": true
   },
   {
     "id": 2,
     "title": "To Kill a Mockingbird",
     "author": "Harper Lee",
-    "price": 14.95
+    "price": 14.95,
+    "delivery": true,
+    "imgUrl": "/img/book02.png"
   },
   {
     "id": 3,
     "title": "1984",
     "author": "George Orwell",
-    "price": 10.50
+    "price": 10.50,
+    "delivery": true,
+    "imgUrl": "/img/book03.png"
   },
   {
     "id": 4,
     "title": "Pride and Prejudice",
     "author": "Jane Austen",
-    "price": 9.99
+    "price": 9.99,
+    "imgUrl": "/img/book04.png",
+    "delivery": true
   },
   {
     "id": 5,
     "title": "The Catcher in the Rye",
     "author": "J.D. Salinger",
-    "price": 11.75
+    "price": 11.75,
+    "imgUrl": "/img/book05.jpg",
+    "delivery": true
+  },
+  {
+    "id": 6,
+    "title": "English G LIGHTHOUSE",
+    "author": "Sydney Thorne",
+    "price": 12.75,
+    "imgUrl": "/img/book01.jpg",
+    "delivery": false
+  },
+  {
+    "id": 7,
+    "title": "English G LIGHTHOUSE",
+    "author": "Sydney Thorne",
+    "price": 12.75,
+    "imgUrl": "/img/book01.jpg",
+    "delivery": true
+  },
+  {
+    "id": 8,
+    "title": "English G LIGHTHOUSE",
+    "author": "Sydney Thorne",
+    "price": 12.75,
+    "imgUrl": "/img/book01.jpg",
+    "delivery": true
+  },
+  {
+    "id": 9,
+    "title": "English G LIGHTHOUSE",
+    "author": "Sydney Thorne",
+    "price": 12.75,
+    "imgUrl": "/img/book01.jpg",
+    "delivery": true
+  },
+  {
+    "id": 10,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "price": 13.99,
+    "imgUrl": "/img/book06.jpg",
+    "delivery": true
+  },
+  {
+    "id": 11,
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "price": 11.25,
+    "imgUrl": "/img/book07.jpg",
+    "delivery": true
+  },
+  {
+    "id": 12,
+    "title": "Harry Potter and the Sorcerer's Stone",
+    "author": "J.K. Rowling",
+    "price": 15.99,
+    "imgUrl": "/img/book08.jpg",
+    "delivery": true
+  },
+  {
+    "id": 13,
+    "title": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "price": 16.50,
+    "imgUrl": "/img/book09.jpg",
+    "delivery": true
+  },
+  {
+    "id": 14,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "price": 9.99,
+    "imgUrl": "/img/book10.jpg",
+    "delivery": true
+  },
+  {
+    "id": 15,
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "price": 12.25,
+    "imgUrl": "/img/book11.jpg",
+    "delivery": true
+  },
+  {
+    "id": 16,
+    "title": "The Shining",
+    "author": "Stephen King",
+    "price": 11.99,
+    "imgUrl": "/img/book12.jpg",
+    "delivery": true
+  },
+  {
+    "id": 17,
+    "title": "Moby-Dick",
+    "author": "Herman Melville",
+    "price": 14.50,
+    "imgUrl": "/img/book13.jpg",
+    "delivery": true
+  },
+  {
+    "id": 18,
+    "title": "Brave New World",
+    "author": "Aldous Huxley",
+    "price": 11.75,
+    "imgUrl": "/img/book14.jpg",
+    "delivery": true
+  },
+  {
+    "id": 19,
+    "title": "The Odyssey",
+    "author": "Homer",
+    "price": 10.99,
+    "imgUrl": "/img/book15.jpg",
+    "delivery": true
+  },
+  {
+    "id": 20,
+    "title": "War and Peace",
+    "author": "Leo Tolstoy",
+    "price": 18.50,
+    "imgUrl": "/img/book16.jpg",
+    "delivery": false
   }
 ]
