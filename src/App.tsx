@@ -1,13 +1,13 @@
 import { Header } from "./components/Header";
 import { Routes, Route } from "react-router-dom";
-import { Store } from "./pages/Store";
+import { Results } from "./pages/Results";
 
 function App() {
   return (
     <>
       <Header />
       <Routes>
-        <Route path="/store" element={<Store />} />
+        <Route path="/results" element={<Results />} />
       </Routes>
     </>
   );
