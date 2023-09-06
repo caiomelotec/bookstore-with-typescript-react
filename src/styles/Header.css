@@ -17,8 +17,8 @@ nav a {
 
 .search-icon {
   position: absolute;
-  right: 0;
-  top: -0.3rem;
+  right: -0.3rem;
+  top: -0.2rem;
   padding: 0.5rem 0;
   color: black;
   background-color: black;
