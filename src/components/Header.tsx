@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/Header.css";
 import { BsFillCartFill } from "react-icons/bs";
 import { FiSearch } from "react-icons/fi";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import books from "../data/fakebooks.json";
 import { useResults } from "../contex/ResultsContext";
 
@@ -67,7 +67,7 @@ export const Header = () => {
         </button>
       </form>
       <nav>
-        <a href="">Home</a>
+        <Link to="/">Home</Link>
         <a href="">About</a>
         <a href="">Store</a>
       </nav>
