@@ -89,15 +89,15 @@
   },
   {
     "id": 12,
-    "title": "Harry Potter and the Sorcerer's Stone",
-    "author": "J.K. Rowling",
+    "title": "Skandar and the Phantom Rider",
+    "author": "A. F. Steadman",
     "price": 15.99,
     "imgUrl": "/img/book08.jpg",
     "delivery": true
   },
   {
     "id": 13,
-    "title": "The Lord of the Rings",
+    "title": "Lord of the Rings 1. The Fellowship of the Rings",
     "author": "J.R.R. Tolkien",
     "price": 16.50,
     "imgUrl": "/img/book09.jpg",
