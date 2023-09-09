@@ -29,12 +29,12 @@ const responsive = {
     slidesToSlide: 1, // optional, default to 1.
   },
 };
-interface CarouselComponentProps {
+type CarouselComponentProps = {
   books: {
     id: number;
     imgUrl: string;
   }[];
-}
+};
 
 export const CarouselComponent = ({ books }: CarouselComponentProps) => {
   return (
