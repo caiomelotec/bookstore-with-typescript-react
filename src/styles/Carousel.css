@@ -4,8 +4,8 @@
   transition: 0.5s;
 }
 .carousel-img:hover {
-  width: 156px;
-  height: 234px;
+  width: 150px;
+  height: 230px;
   cursor: pointer;
 }
 
@@ -17,9 +17,10 @@
 }
 .carousel-container {
   width: 75%;
-  padding: 1rem 1.5rem;
+  padding: 1rem 3rem;
   box-shadow: 0px -5px 5px rgba(0, 0, 0, 0.2), 5px 0px 5px rgba(0, 0, 0, 0.2),
     0px 5px 5px rgba(0, 0, 0, 0.2), -5px 0px 5px rgba(0, 0, 0, 0.2);
+  height: 280px;
 }
 .test-01 {
   display: flex;
