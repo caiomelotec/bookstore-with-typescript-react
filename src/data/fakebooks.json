@@ -1,4 +1,4 @@
-[
+ [
   {
     "id": 1,
     "title": "The Great Gatsby",
@@ -158,5 +158,75 @@
     "price": 18.50,
     "imgUrl": "/img/book16.jpg",
     "delivery": false
+  },
+  {
+    "id": 21,
+    "title": "Evil Eye",
+    "author": "Etaf Rum",
+    "price": 27.50,
+    "imgUrl": "/img/book17.jpg",
+    "delivery": true
+  }
+  ,
+  {
+    "id": 22,
+    "title": "Creep: Accusations and Confessions",
+    "author": "Myriam Gurba",
+    "price": 29.50,
+    "imgUrl": "/img/book18.jpg",
+    "delivery": true
+  }
+  ,
+  {
+    "id": 23,
+    "title": "The Fraud",
+    "author": "Zadie Smith",
+    "price": 22.50,
+    "imgUrl": "/img/book19.jpg",
+    "delivery": true
+  }
+  ,
+  {
+    "id": 24,
+    "title": "Wound",
+    "author": "Oksana Vasyakina",
+    "price": 22.50,
+    "imgUrl": "/img/book20.jpg",
+    "delivery": true
+  },  {
+    "id": 25,
+    "title": "Wednesday's Child: Stories",
+    "author": "Yiyun Li ",
+    "price": 25.11,
+    "imgUrl": "/img/book21.jpg",
+    "delivery": true
+  },  {
+    "id": 26,
+    "title": "Amazing Grace Adams",
+    "author": "Fran Littlewood",
+    "price": 26.89,
+    "imgUrl": "/img/book22.jpg",
+    "delivery": true
+  },  {
+    "id": 27,
+    "title": "While You Were Out",
+    "author": "Meg Kissinger",
+    "price": 30.11,
+    "imgUrl": "/img/book23.jpg",
+    "delivery": true
+  },  {
+    "id": 28,
+    "title": "How Elites Ate the Social Justice Movement",
+    "author": "Fredrik DeBoer",
+    "price": 25.89,
+    "imgUrl": "/img/book24.jpg",
+    "delivery": true
+  },  {
+    "id": 29,
+    "title": "Holly",
+    "author": "Stephen King",
+    "price": 30.22,
+    "imgUrl": "/img/book25.jpg",
+    "delivery": true
   }
 ]
