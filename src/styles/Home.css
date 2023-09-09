@@ -3,3 +3,9 @@
   margin-left: 12rem;
   margin-top: 3rem;
 }
+@media (max-width: 768px) {
+  .info-01 {
+    margin-left: 0;
+    text-align: center;
+  }
+}
