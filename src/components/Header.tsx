@@ -6,6 +6,7 @@ import { useNavigate, Link } from "react-router-dom";
 import books from "../data/fakebooks.json";
 import { useResults } from "../contex/ResultsContext";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { useShoppingCart } from "../contex/ShoppingCartContext";
 
 type Book = {
   id: number;
@@ -18,6 +19,7 @@ export const Header = () => {
   const navigate = useNavigate();
 
   const { setResults } = useResults();
+  const { cartQuantity } = useShoppingCart();
 
   const [query, setQuery] = useState<string>("");
   const [toggle, setToggle] = useState<boolean>(false);
@@ -84,8 +86,8 @@ export const Header = () => {
         </Link>
       </nav>
       <div className="warenkorb">
-        <BsFillCartFill className="warenkorb-icon" size={22} />
-        <span>0</span>
+        <BsFillCartFill className="warenkorb-icon" size={32} />
+        <span>{cartQuantity}</span>
       </div>
       <button
         className="hamburger-menu"
