@@ -45,12 +45,13 @@ nav a {
 
 .warenkorb span {
   position: absolute;
-  padding: 0.3rem;
+  padding: 5px;
   background-color: rgb(108, 176, 6);
-  border-radius: 100%;
-  font-size: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
   right: -0.5rem;
-  top: -0.3rem;
+  top: -1.3rem;
+  transform: translate(25%, 25%);
 }
 .logo-and-input-div {
   display: flex;
