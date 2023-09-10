@@ -2,6 +2,7 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 // import books from "../data/fakebooks.json";
 import "../styles/Carousel.css";
+import { Link } from "react-router-dom";
 
 // interface CarouselComponentProps {
 //   deviceType: string; // Change the type to an array of strings
@@ -60,7 +61,9 @@ export const CarouselComponent = ({ books }: CarouselComponentProps) => {
         >
           {books.map((book) => (
             <div className="test" key={book.id}>
-              <img src={book.imgUrl} alt="" className="carousel-img" />
+              <Link to={`store/${book.id}`}>
+                <img src={book.imgUrl} alt="" className="carousel-img" />
+              </Link>
             </div>
           ))}
         </Carousel>
