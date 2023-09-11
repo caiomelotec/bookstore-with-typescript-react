@@ -36,3 +36,24 @@
   gap: 1rem;
   align-items: center;
 }
+.p-book-price {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 790px) {
+  .book-id-container {
+    height: 750px;
+    flex-direction: column;
+  }
+  .book-id-img {
+    height: 362px;
+    width: 238px;
+    object-fit: contain;
+  }
+  .h2-description {
+    font-size: 1.2rem;
+  }
+  .p-description {
+    font-size: 0.8rem;
+  }
+}
