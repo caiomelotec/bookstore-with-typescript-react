@@ -1,3 +1,9 @@
+import BookId from "../components/BookId";
+
 export const BookDetail = () => {
-  return <div>BookDetail</div>;
+  return (
+    <div>
+      <BookId />
+    </div>
+  );
 };
