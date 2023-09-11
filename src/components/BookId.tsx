@@ -15,21 +15,22 @@ export type Book = {
 };
 
 export default function BookId() {
-  const { id } = useParams();
-
+  // Get the book id from the route
+  const { id } = useParams<{ id: string }>();
+  // Find the selected book by its id
   const selectedBook: Book | undefined = books.find(
     (book) => book.id === Number(id)
   );
-
-  if (!selectedBook) {
-    return <div>Book not found</div>;
-  }
 
   const { increaseCartQuantity, decreaseCartQuantity, getItemQuantity } =
     useShoppingCart();
   const quantity = getItemQuantity(Number(id));
 
   const buttonStyle = { cursor: "not-allowed", backgroundColor: "gray" };
+  // If the book is not found, display a message and potentially handle navigation
+  if (!selectedBook) {
+    return <div>Book not found</div>;
+  }
 
   return (
     <div className="book-id-container-wrapper">
