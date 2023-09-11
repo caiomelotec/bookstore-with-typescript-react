@@ -1,0 +1,38 @@
+.h2-description,
+.p-book-price,
+.p-book-delivery,
+.p-book-author,
+.h1-book-title,
+.p-description,
+.delivery-span,
+.quantity-span {
+  color: black;
+}
+
+.book-id-container-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.book-id-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 700px;
+  gap: 2rem;
+}
+.div-book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.book-id-img {
+  width: 400px;
+  height: 600px;
+  object-fit: cover;
+}
+.div-delivery-span-and-icon {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
