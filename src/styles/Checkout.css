@@ -1,0 +1,40 @@
+.product-div-wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 3rem 0;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  width: 950px;
+  padding: 1rem 0;
+  margin: 1rem auto;
+  border-bottom: 2px solid rgb(214, 214, 214);
+}
+.item-div {
+  width: 950px;
+  margin: 0 auto;
+}
+.p-price,
+.p-quantity,
+.quantity-and-price,
+.p-item {
+  color: black;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+.quantity-and-price {
+  display: flex;
+  gap: 8rem;
+}
+.p-price {
+  margin-right: 10rem;
+}
+
+.p-quantity {
+  margin-right: 0.8rem;
+}
+.trash-icon {
+  cursor: pointer;
+}
