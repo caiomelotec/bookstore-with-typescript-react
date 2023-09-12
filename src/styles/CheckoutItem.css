@@ -1,0 +1,34 @@
+.checkoutitem-author,
+.checkoutitem-title {
+  color: black;
+}
+.wrapper-checkout-item {
+  display: flex;
+  justify-content: space-between;
+  width: 950px;
+  border-bottom: 2px solid rgb(214, 214, 214);
+  padding: 1rem 0;
+}
+.checkout-delivery {
+  display: flex;
+  gap: 1rem;
+}
+.checkout-img-and-info {
+  display: flex;
+  gap: 1rem;
+}
+.price-and-quantity {
+  display: flex;
+  gap: 8em;
+}
+.input-quantity {
+  width: 4rem;
+  height: 2rem;
+  font-size: 1.2em;
+  padding: 0.2rem 0;
+  padding-left: 1rem;
+  border: 2px solid rgb(214, 214, 214);
+}
+.checkout-img-item {
+  width: 250px;
+}
