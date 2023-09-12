@@ -2,6 +2,7 @@ import { BsFillCircleFill } from "react-icons/bs";
 import { formatCurrency } from "../ultilities/formatCurrency";
 import { useShoppingCart } from "../contex/ShoppingCartContext";
 // import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 type Book = {
   id: number;
@@ -27,8 +28,12 @@ export const StoreItem = ({
 
   return (
     <div key={id} className="store-container">
-      <img className="book-img-store" src={imgUrl} />
-      <p className="book-title">{title}</p>
+      <Link to={`/bookdetail/${id}`}>
+        <img className="book-img-store" src={imgUrl} />
+      </Link>
+      <Link to={`/bookdetail/${id}`}>
+        <p className="book-title">{title}</p>
+      </Link>
       <p className="book-author">{author}</p>
       <div className="price-delivery-div">
         <span className="book-price">{formatCurrency(price)}</span>
