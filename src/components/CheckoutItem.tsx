@@ -15,25 +15,30 @@ export const CheckoutItem = ({
   id,
   quantity: initialQuantity,
 }: CartItemsProps) => {
+  // State to manage the input field quantity
   const [inputQuantity, setInputQuantity] = useState<number>(initialQuantity);
 
   const { increaseCartQuantity, decreaseCartQuantity, removeFromCart } =
     useShoppingCart();
 
+  // Function to handle input field changes
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>): void => {
     let newNumber = Number(e.target.value);
+    // If the new quantity is greater, increase the cart quantity
     if (initialQuantity < newNumber) {
       setInputQuantity(newNumber);
       increaseCartQuantity(id);
     } else if (initialQuantity > newNumber) {
+      // If the new quantity is smaller, decrease the cart quantity
       setInputQuantity(newNumber);
       decreaseCartQuantity(id);
     }
   };
-
+  // Find the corresponding book in the cartItems array
   const checkoutItem = books.find((book) => book.id === id);
 
   if (checkoutItem === null) return null;
+
   return (
     <div className="wrapper-checkout-item">
       <div className="checkout-img-and-info">
