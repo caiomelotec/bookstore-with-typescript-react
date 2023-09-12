@@ -61,7 +61,7 @@ export const CarouselComponent = ({ books }: CarouselComponentProps) => {
         >
           {books.map((book) => (
             <div className="test" key={book.id}>
-              <Link to={`store/${book.id}`}>
+              <Link to={`bookdetail/${book.id}`}>
                 <img src={book.imgUrl} alt="" className="carousel-img" />
               </Link>
             </div>
