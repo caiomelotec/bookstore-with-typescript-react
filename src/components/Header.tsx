@@ -70,6 +70,7 @@ export const Header = () => {
             value={query}
             type="search"
             className="input-search"
+            placeholder="Search books or authors"
           />
           <button className="search-icon" type="submit">
             <FiSearch className="search-icon" size={35} />
@@ -85,7 +86,7 @@ export const Header = () => {
           Store
         </Link>
       </nav>
-      <div className="warenkorb">
+      <div className="warenkorb" onClick={() => navigate("/checkout")}>
         <BsFillCartFill className="warenkorb-icon" size={32} />
         <span>{cartQuantity}</span>
       </div>
@@ -120,7 +121,7 @@ export const Header = () => {
         >
           Store
         </Link>
-        <div className="checkout-div">
+        <div className="checkout-div" onClick={() => navigate("/checkout")}>
           <BsFillCartFill className="" size={25} />
           <span> Press to Checkout</span>
         </div>
