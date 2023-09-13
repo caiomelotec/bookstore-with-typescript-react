@@ -82,7 +82,7 @@ export const Header = () => {
           Home
         </Link>
         <a className="nav-link">About</a>
-        <Link to="/store" className="nav-link">
+        <Link to={`/store/${1}`} className="nav-link">
           Store
         </Link>
       </nav>
