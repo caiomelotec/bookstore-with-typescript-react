@@ -106,3 +106,22 @@
     margin: 2rem 0;
   }
 }
+.pagination-btns-div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 5rem;
+}
+.active-page,
+.pagination-btn {
+  background-color: black;
+  border: none;
+  padding: 20px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.active-page {
+  background-color: gray;
+}
