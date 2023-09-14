@@ -41,40 +41,50 @@ export const CheckoutItem = ({
 
   return (
     <div className="wrapper-checkout-item">
-      <div className="checkout-img-and-info">
-        <img src={checkoutItem?.imgUrl} className="checkout-img-item" alt="" />
-        <div className="checkoutitem-info-div">
-          <h2 className="checkoutitem-title">{checkoutItem?.title}</h2>
-          <p className="checkoutitem-author">{checkoutItem?.author}</p>
-          <div className="checkout-delivery">
-            <span className="delivery-span">Delivery</span>
-            <BsFillCircleFill
-              size={20}
-              fill={checkoutItem?.delivery ? "green" : "red"}
+      <div className="checkout-item-container">
+        <div className="checkout-img-and-info">
+          <div className="img-div-checkout">
+            <img
+              src={checkoutItem?.imgUrl}
+              className="checkout-img-item"
+              alt=""
             />
           </div>
+          <div className="checkoutitem-info-div">
+            <h2 className="checkoutitem-title">{checkoutItem?.title}</h2>
+            <p className="checkoutitem-author">{checkoutItem?.author}</p>
+            <div className="checkout-delivery">
+              <span className="delivery-span">Delivery</span>
+              <BsFillCircleFill
+                size={20}
+                fill={checkoutItem?.delivery ? "green" : "red"}
+              />
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="price-and-quantity">
-        <form>
-          <input
-            className="input-quantity"
-            style={{ color: "black" }}
-            type="number"
-            id="quantity"
-            name="quantity"
-            min="1"
-            value={inputQuantity}
-            onChange={handleInputChange}
+        <div className="price-and-quantity">
+          <form>
+            <input
+              className="input-quantity"
+              style={{ color: "black" }}
+              type="number"
+              id="quantity"
+              name="quantity"
+              min="1"
+              value={inputQuantity}
+              onChange={handleInputChange}
+            />
+          </form>
+          <p style={{ color: "black" }}>
+            {formatCurrency(checkoutItem!.price)}
+          </p>
+          <LuTrash2
+            size={27}
+            fill="black"
+            className="trash-icon"
+            onClick={() => removeFromCart(id)}
           />
-        </form>
-        <p style={{ color: "black" }}>{formatCurrency(checkoutItem!.price)}</p>
-        <LuTrash2
-          size={27}
-          fill="black"
-          className="trash-icon"
-          onClick={() => removeFromCart(id)}
-        />
+        </div>
       </div>
     </div>
   );
