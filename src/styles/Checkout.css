@@ -100,4 +100,32 @@
 /* Media Query for Small Screens */
 @media screen and (max-width: 768px) {
   /* Adjust styles for small screens here */
+  .product-info {
+    display: none;
+  }
+  .quantity-and-price {
+    width: 200px;
+    gap: 1rem;
+  }
+  .stripe {
+    width: 200px;
+    justify-content: center;
+  }
+  .stripe img {
+    width: 400px;
+    margin-left: 12rem;
+  }
+  .payment-div {
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+  .total-payment-div {
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-div-wrapper {
+    margin: 0;
+  }
 }
