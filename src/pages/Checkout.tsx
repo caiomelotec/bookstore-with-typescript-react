@@ -1,5 +1,6 @@
 import { CheckoutItem } from "../components/CheckoutItem";
 import { useShoppingCart } from "../contex/ShoppingCartContext";
+import StripeIMG from "../../public/img/stripeimg.png";
 import "../styles/Checkout.css";
 
 export const Checkout = () => {
@@ -17,6 +18,15 @@ export const Checkout = () => {
         {cartItems.map((item) => (
           <CheckoutItem key={item.id} {...item} />
         ))}
+      </div>
+      <div className="payment-div">
+        <div className="total-payment-div">
+          <p className="total-p">Total: 42.14$</p>
+          <button className="checkout-btn">CHECKOUT</button>
+        </div>
+        <div className="stripe">
+          <img src={StripeIMG} alt="" />
+        </div>
       </div>
     </div>
   );
