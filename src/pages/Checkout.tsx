@@ -2,6 +2,8 @@ import { CheckoutItem } from "../components/CheckoutItem";
 import { useShoppingCart } from "../contex/ShoppingCartContext";
 import StripeIMG from "../../public/img/stripeimg.png";
 import "../styles/Checkout.css";
+import { formatCurrency } from "../ultilities/formatCurrency";
+import books from "../data/fakebooks.json";
 
 export const Checkout = () => {
   const { cartItems } = useShoppingCart();
@@ -14,14 +16,22 @@ export const Checkout = () => {
           <p className="p-price">Price</p>
         </div>
       </div>
-      <div className="item-div">
-        {cartItems.map((item) => (
-          <CheckoutItem key={item.id} {...item} />
-        ))}
-      </div>
+
+      {cartItems.map((item) => (
+        <CheckoutItem key={item.id} {...item} />
+      ))}
+
       <div className="payment-div">
         <div className="total-payment-div">
-          <p className="total-p">Total: 42.14$</p>
+          <p className="total-p">
+            Total:{" "}
+            {formatCurrency(
+              cartItems.reduce((total, cartItem) => {
+                const item = books.find((book) => book.id == cartItem.id);
+                return total + (item?.price || 0) * cartItem.quantity;
+              }, 0)
+            )}
+          </p>
           <button className="checkout-btn">CHECKOUT</button>
         </div>
         <div className="stripe">
