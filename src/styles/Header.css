@@ -76,13 +76,13 @@ nav a {
     display: none;
   }
   .input-search {
-    width: 300px;
+    width: 250px;
   }
   .warenkorb {
-    display: none;
+    margin-top: 2.2rem;
+    margin-right: 0.3rem;
   }
   .warenkorb-icon {
-    display: none;
   }
   .logo-and-input-div {
     display: block;

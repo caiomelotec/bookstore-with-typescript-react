@@ -90,6 +90,7 @@ export const Header = () => {
         <BsFillCartFill className="warenkorb-icon" size={32} />
         <span>{cartQuantity}</span>
       </div>
+      {/* mobile menu*/}
       <button
         className="hamburger-menu"
         onClick={() => {
@@ -121,10 +122,6 @@ export const Header = () => {
         >
           Store
         </Link>
-        <div className="checkout-div" onClick={() => navigate("/checkout")}>
-          <BsFillCartFill className="" size={25} />
-          <span> Press to Checkout</span>
-        </div>
       </nav>
     </header>
   );
