@@ -1,6 +1,6 @@
- [
+[
   {
-    "id": 1,
+    "id": "price_1NqNLbCAw3owkE6iMMki5AnZ",
     "title": "The Great Gatsby",
     "author": "F. Scott Fitzgerald",
     "price": 12.99,
@@ -8,7 +8,7 @@
     "delivery": true
   },
   {
-    "id": 2,
+    "id": "price_1NqNNOCAw3owkE6itWCbOj6g",
     "title": "To Kill a Mockingbird",
     "author": "Harper Lee",
     "price": 14.95,
@@ -16,7 +16,7 @@
     "imgUrl": "/img/book02.png"
   },
   {
-    "id": 3,
+    "id": "price_1NqNORCAw3owkE6iK7RE7I9Y",
     "title": "1984",
     "author": "George Orwell",
     "price": 10.50,
@@ -24,7 +24,7 @@
     "imgUrl": "/img/book03.png"
   },
   {
-    "id": 4,
+    "id": "price_1NqZYnCAw3owkE6iFjh4c4Bg",
     "title": "Pride and Prejudice",
     "author": "Jane Austen",
     "price": 9.99,
@@ -32,7 +32,7 @@
     "delivery": true
   },
   {
-    "id": 5,
+    "id": "price_1NqZaUCAw3owkE6iwSy9jEiG",
     "title": "The Catcher in the Rye",
     "author": "J.D. Salinger",
     "price": 11.75,
@@ -40,7 +40,7 @@
     "delivery": true
   },
   {
-    "id": 6,
+    "id": "price_1NqZcQCAw3owkE6iSOBgrnoK",
     "title": "English G LIGHTHOUSE",
     "author": "Sydney Thorne",
     "price": 12.75,
@@ -48,31 +48,7 @@
     "delivery": false
   },
   {
-    "id": 7,
-    "title": "English G LIGHTHOUSE",
-    "author": "Sydney Thorne",
-    "price": 12.75,
-    "imgUrl": "/img/book01.jpg",
-    "delivery": true
-  },
-  {
-    "id": 8,
-    "title": "English G LIGHTHOUSE",
-    "author": "Sydney Thorne",
-    "price": 12.75,
-    "imgUrl": "/img/book01.jpg",
-    "delivery": true
-  },
-  {
-    "id": 9,
-    "title": "English G LIGHTHOUSE",
-    "author": "Sydney Thorne",
-    "price": 12.75,
-    "imgUrl": "/img/book01.jpg",
-    "delivery": true
-  },
-  {
-    "id": 10,
+    "id": "price_1NqZeBCAw3owkE6iCQRLiBlO",
     "title": "The Hobbit",
     "author": "J.R.R. Tolkien",
     "price": 13.99,
@@ -80,7 +56,7 @@
     "delivery": true
   },
   {
-    "id": 11,
+    "id": "price_1NqbUACAw3owkE6itteQJVvg",
     "title": "The Hunger Games",
     "author": "Suzanne Collins",
     "price": 11.25,
@@ -88,7 +64,7 @@
     "delivery": true
   },
   {
-    "id": 12,
+    "id": "price_1NqbVGCAw3owkE6iHpWVy3zF",
     "title": "Skandar and the Phantom Rider",
     "author": "A. F. Steadman",
     "price": 15.99,
@@ -96,7 +72,7 @@
     "delivery": true
   },
   {
-    "id": 13,
+    "id": "price_1NqbW2CAw3owkE6i2MzhyP6z",
     "title": "Lord of the Rings 1. The Fellowship of the Rings",
     "author": "J.R.R. Tolkien",
     "price": 16.50,
@@ -104,7 +80,7 @@
     "delivery": true
   },
   {
-    "id": 14,
+    "id": "price_1NqbWnCAw3owkE6iSpj21syJ",
     "title": "The Alchemist",
     "author": "Paulo Coelho",
     "price": 9.99,
@@ -112,7 +88,7 @@
     "delivery": true
   },
   {
-    "id": 15,
+    "id": "price_1NqbXQCAw3owkE6iNTFd4xsc",
     "title": "The Da Vinci Code",
     "author": "Dan Brown",
     "price": 12.25,
@@ -120,7 +96,7 @@
     "delivery": true
   },
   {
-    "id": 16,
+    "id": "price_1NqbYuCAw3owkE6iECdtQlwj",
     "title": "The Shining",
     "author": "Stephen King",
     "price": 11.99,
@@ -128,7 +104,7 @@
     "delivery": true
   },
   {
-    "id": 17,
+    "id": "price_1NqbZbCAw3owkE6i5vhXoxvH",
     "title": "Moby-Dick",
     "author": "Herman Melville",
     "price": 14.50,
@@ -136,7 +112,7 @@
     "delivery": true
   },
   {
-    "id": 18,
+    "id": "price_1NqbayCAw3owkE6iVtCHDZVh",
     "title": "Brave New World",
     "author": "Aldous Huxley",
     "price": 11.75,
@@ -144,7 +120,7 @@
     "delivery": true
   },
   {
-    "id": 19,
+    "id": "price_1NqbbeCAw3owkE6iE2bJjo8b",
     "title": "The Odyssey",
     "author": "Homer",
     "price": 10.99,
@@ -152,7 +128,7 @@
     "delivery": true
   },
   {
-    "id": 20,
+    "id": "price_1NqbcNCAw3owkE6iV6mxhCbt",
     "title": "War and Peace",
     "author": "Leo Tolstoy",
     "price": 18.50,
@@ -160,69 +136,71 @@
     "delivery": false
   },
   {
-    "id": 21,
+    "id": "price_1NqbdJCAw3owkE6iflC0Vp7c",
     "title": "Evil Eye",
     "author": "Etaf Rum",
     "price": 27.50,
     "imgUrl": "/img/book17.jpg",
     "delivery": true
-  }
-  ,
+  },
   {
-    "id": 22,
+    "id": "price_1NqbfkCAw3owkE6ihneqgIQm",
     "title": "Creep: Accusations and Confessions",
     "author": "Myriam Gurba",
     "price": 29.50,
     "imgUrl": "/img/book18.jpg",
     "delivery": true
-  }
-  ,
+  },
   {
-    "id": 23,
+    "id": "price_1NqbgWCAw3owkE6imcFTj585",
     "title": "The Fraud",
     "author": "Zadie Smith",
     "price": 22.50,
     "imgUrl": "/img/book19.jpg",
     "delivery": true
-  }
-  ,
+  },
   {
-    "id": 24,
+    "id": "price_1Nqbh7CAw3owkE6igSwud3GH",
     "title": "Wound",
     "author": "Oksana Vasyakina",
     "price": 22.50,
     "imgUrl": "/img/book20.jpg",
     "delivery": true
-  },  {
-    "id": 25,
+  },
+  {
+    "id": "price_1NqbhnCAw3owkE6i1nY2yFZ9",
     "title": "Wednesday's Child: Stories",
     "author": "Yiyun Li ",
     "price": 25.11,
     "imgUrl": "/img/book21.jpg",
     "delivery": true
-  },  {
-    "id": 26,
+  },
+  {
+    "id": "price_1NqbiyCAw3owkE6iSB1aP73E",
     "title": "Amazing Grace Adams",
     "author": "Fran Littlewood",
     "price": 26.89,
     "imgUrl": "/img/book22.jpg",
     "delivery": true
-  },  {
-    "id": 27,
+  },
+  {
+    "id": "price_1NqbjWCAw3owkE6iNkYv0YZK",
     "title": "While You Were Out",
     "author": "Meg Kissinger",
     "price": 30.11,
     "imgUrl": "/img/book23.jpg",
     "delivery": true
-  },  {
-    "id": 28,
+  },
+  {
+    "id": "price_1NqbkKCAw3owkE6icyJRAi1e",
     "title": "How Elites Ate the Social Justice Movement",
     "author": "Fredrik DeBoer",
     "price": 25.89,
     "imgUrl": "/img/book24.jpg",
     "delivery": true
-  },  {
-    "id": 29,
+  },
+  {
+    "id": "price_1NqbkuCAw3owkE6idOfYjm9J",
     "title": "Holly",
     "author": "Stephen King",
     "price": 30.22,
