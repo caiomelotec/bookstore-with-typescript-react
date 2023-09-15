@@ -4,9 +4,8 @@ import "../styles/BookId.css";
 import { formatCurrency } from "../ultilities/formatCurrency";
 import { BsFillCircleFill } from "react-icons/bs";
 import { useShoppingCart } from "../contex/ShoppingCartContext";
-
 export type Book = {
-  id: number;
+  id: string | number;
   title: string;
   author: string;
   price: number;
@@ -18,13 +17,11 @@ export default function BookId() {
   // Get the book id from the route
   const { id } = useParams<{ id: string }>();
   // Find the selected book by its id
-  const selectedBook: Book | undefined = books.find(
-    (book) => book.id === Number(id)
-  );
+  const selectedBook: Book | undefined = books.find((book) => book.id === id);
 
   const { increaseCartQuantity, decreaseCartQuantity, getItemQuantity } =
     useShoppingCart();
-  const quantity = getItemQuantity(Number(id));
+  const quantity = getItemQuantity(id!);
 
   const buttonStyle = { cursor: "not-allowed", backgroundColor: "gray" };
   // If the book is not found, display a message and potentially handle navigation
@@ -57,13 +54,13 @@ export default function BookId() {
             <div className="div-btns">
               <button
                 className="add-cart-btn"
-                onClick={() => increaseCartQuantity(Number(id))}
+                onClick={() => increaseCartQuantity(id!)}
               >
                 +
               </button>
               <span className="quantity-span">{quantity}</span>
               <button
-                onClick={() => decreaseCartQuantity(Number(id))}
+                onClick={() => decreaseCartQuantity(id!)}
                 className="sub-cart-btn"
               >
                 -
@@ -72,7 +69,7 @@ export default function BookId() {
           ) : (
             <button
               className="add-cart-btn"
-              onClick={() => increaseCartQuantity(Number(id))}
+              onClick={() => increaseCartQuantity(id!)}
               disabled={!selectedBook.delivery}
               style={
                 selectedBook.delivery ? { cursor: "pointer" } : buttonStyle
