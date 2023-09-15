@@ -7,7 +7,7 @@ import { useState } from "react";
 import { formatCurrency } from "../ultilities/formatCurrency";
 
 type CartItemsProps = {
-  id: number;
+  id: string;
   quantity: number;
 };
 
