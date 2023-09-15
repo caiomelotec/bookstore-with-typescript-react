@@ -6,7 +6,34 @@ import { formatCurrency } from "../ultilities/formatCurrency";
 import books from "../data/fakebooks.json";
 
 export const Checkout = () => {
-  const { cartItems } = useShoppingCart();
+  const { cartItems, clearCart } = useShoppingCart();
+
+  const handleCheckout = async (): Promise<void> => {
+    try {
+      const response = await fetch("http://localhost:4000/checkout", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ items: cartItems }),
+      });
+
+      if (response.ok) {
+        const responseData = await response.json();
+        if (responseData.url) {
+          window.location.assign(responseData.url); // Forwarding user to Stripe
+          clearCart();
+        }
+      } else {
+        // Handle error here if needed
+        console.error("Failed to initiate checkout:", response.statusText);
+      }
+    } catch (error) {
+      // Handle any network or other errors here
+      console.error("Error during checkout:", error);
+    }
+  };
+
   return (
     <div className="product-div-wrapper">
       <div className="product-info">
@@ -32,7 +59,13 @@ export const Checkout = () => {
               }, 0)
             )}
           </p>
-          <button className="checkout-btn">CHECKOUT</button>
+          <button
+            type="submit"
+            onClick={handleCheckout}
+            className="checkout-btn"
+          >
+            CHECKOUT
+          </button>
         </div>
         <div className="stripe">
           <img src={StripeIMG} alt="" />
