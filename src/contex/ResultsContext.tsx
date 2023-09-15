@@ -1,7 +1,7 @@
 import React, { createContext, useContext, useState, ReactNode } from "react";
 
 type Book = {
-  id: number;
+  id: string;
   title: string;
   author: string;
   price: number;
