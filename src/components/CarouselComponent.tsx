@@ -32,7 +32,7 @@ const responsive = {
 };
 type CarouselComponentProps = {
   books: {
-    id: number;
+    id: string;
     imgUrl: string;
   }[];
 };
