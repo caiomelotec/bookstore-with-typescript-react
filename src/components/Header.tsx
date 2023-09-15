@@ -9,7 +9,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useShoppingCart } from "../contex/ShoppingCartContext";
 
 type Book = {
-  id: number;
+  id: string;
   title: string;
   author: string;
   price: number;
