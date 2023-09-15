@@ -5,7 +5,7 @@ import { useShoppingCart } from "../contex/ShoppingCartContext";
 import { Link } from "react-router-dom";
 
 type Book = {
-  id: number;
+  id: string;
   title: string;
   author: string;
   price: number;
